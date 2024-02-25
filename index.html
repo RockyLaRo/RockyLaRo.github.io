@@ -1,63 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="/death-calc/css/bootstrap.css" rel="stylesheet">
-    <title>RockyLaRo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="/death-calc/css/bootstrap.css" rel="stylesheet">
+  <title>RockyLaRo</title>
+  <style>
+    /* Media queries for mobile enhancements */
+    @media(max-width: 768px) {
+      .navbar-expand-lg {
+        display: none;
+      }
+      .navbar-expand-sm {
+        display: flex;
+        flex-direction: column;
+      }
+      .nav-item {
+        margin-bottom: 10px;
+      }
+      .btn {
+        max-width: 150px;
+      }
+    }
+    
+    /* Photo background styles */
+    body {
+      background-image: url("path/to/your/photo.jpg");
+      background-size: cover; /* Adjust background size as needed */
+      background-attachment: fixed; /* Keep photo fixed on scroll */
+      position: relative; /* This is required for centering content */
+    }
+    
+    /* Center content vertically (optional) */
+    .container {
+      min-height: 100vh; /* Set minimum height to viewport height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">RockyLaRo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Calculators</a>
-                        <a class="nav-link" href="/death-calc/">Calculators</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" title="Tibia">Tibia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" title="Guilds">Guilds</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" title="Who's Online">Who's Online</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" title="Wiki">Wiki</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" title="About">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" title="Support">Support</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-        <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6 text-center">
-                <h1>Welcome to My Website</h1>
-                <p>This is the main page content.</p>
-                <!-- Link to Death Calculator -->
-                <a href="/death-calc/" class="btn btn-primary btn-lg">Go to Death Calculator</a>
-            </div>
-        </div>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">RockyLaRo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Calculators</a>
+            <a class="nav-link" href="/death-calc/">Calculators</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Tibia">Tibia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Guilds">Guilds</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Who's Online">Who's Online</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Wiki">Wiki</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" title="Support">Support</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!-- Include Bootstrap JS - Jquery - Popper.js -->
-    <script src="/death-calc/js/jquery-3.7.1.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
-    <script src="/death-calc/js/popper.js"></script>
-    <script src="/death-calc/js/bootstrap.bundle.js"></script>
+  </nav>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center">
+        <h1>Welcome to My Website</h1>
+        <p>This is the main page content.</p>
+        <a href="/death-calc/" class="btn btn-primary btn-lg">Go to Death Calculator</a>
+      </div>
+    </div>
+  </div>
+  <script src="/death-calc/js/jquery-3.7.1.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+  <script src="/death-calc/js/popper.js"></script>
+  <script src="/death-calc/js/bootstrap.bundle.js"></script>
 </body>
 </html>
