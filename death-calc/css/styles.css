@@ -1,0 +1,78 @@
+#calcContainer{
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#resultsTable{
+    width: 50%;
+}
+
+#vocations{
+    margin-left: 10px;
+    max-width: 120px;
+    height: 45px;
+}
+
+#level{
+    width: 20%;
+    height: 45px;
+}
+
+#promotion{
+    margin-left: 10px;
+    height: 45px;
+    line-height: 22px;
+}
+
+#chkPromotion{
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.form-check{
+    padding-top: 5px;
+    padding-left: 0;
+}
+
+.form-row input{
+    height: 50px;
+}
+
+.form-row{
+    margin: 20px auto;
+}
+
+.container{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#blessList{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.col.col-md-2>.custom-control.custom-checkbox>.custom-control-label.unselectable::before {
+    top: .35rem;
+}
+
+.col.col-md-2>.custom-control.custom-checkbox>.custom-control-label.unselectable::after{
+    top: .35rem;
+}
+
+.form-group{
+    margin: 0 !important;
+    padding: 0 !important;
+}
